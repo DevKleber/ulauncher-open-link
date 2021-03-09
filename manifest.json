@@ -1,0 +1,19 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "Firefox open extension",
+    "description": "Open directly firefox links",
+    "developer_name": "Bruno Leite",
+    "icon": "images/firefox.svg",
+    "options": {
+      "query_debounce": 0.05
+    },
+    "preferences": [
+      {
+        "id": "ff_kw",
+        "type": "keyword",
+        "name": "Firefox",
+        "default_value": "ff"
+      }
+    ]
+  }
+  

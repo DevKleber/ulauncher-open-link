@@ -23,14 +23,12 @@ class KeywordQueryEventListener(EventListener):
 
         items = [
             ExtensionResultItem(
-                icon = 'images/firefox.svg',
+                icon = 'images/browser.svg',
                 name = event.get_argument(),
-                description = 'Open %s in firefox' % event.get_argument(),
+                description = 'Open %s in a new window of the default browser' % event.get_argument(),
                 on_enter=ExtensionCustomAction(query, keep_app_open=True)
             )
         ]
-
-
 
         return RenderResultListAction(items)
 

@@ -10,7 +10,6 @@ import webbrowser
 class FfExtension(Extension): 
 
  
-alksdf
     def __init__(self):
         super(FfExtension, self).__init__()
         self.subscribe(KeywordQueryEvent, KeywordQueryEventListener())

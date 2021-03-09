@@ -1,7 +1,7 @@
 {
   "required_api_version": "^2.0.0",
   "name": "open url on default browser",
-  "description": "Open directly default browser links",
+  "description": "Open url in a new window of the default browser",
   "developer_name": "Bitter - Kleber Souza",
   "icon": "images/firefox.svg",
   "options": {
@@ -9,10 +9,10 @@
   },
   "preferences": [
     {
-      "id": "ff_kw",
+      "id": "l_kw",
       "type": "keyword",
-      "name": "Firefox",
-      "default_value": "ff"
+      "name": "Default browser",
+      "default_value": "l"
     }
   ]
 }

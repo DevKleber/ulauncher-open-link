@@ -3,7 +3,7 @@
   "name": "open url on default browser",
   "description": "Open url in a new window of the default browser",
   "developer_name": "Bitter - Kleber Souza",
-  "icon": "images/firefox.svg",
+  "icon": "images/browser.svg",
   "options": {
     "query_debounce": 0.05
   },

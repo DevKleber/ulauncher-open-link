@@ -1,19 +1,18 @@
 {
-    "required_api_version": "^2.0.0",
-    "name": "Firefox open extension",
-    "description": "Open directly firefox links",
-    "developer_name": "Bruno Leite",
-    "icon": "images/firefox.svg",
-    "options": {
-      "query_debounce": 0.05
-    },
-    "preferences": [
-      {
-        "id": "ff_kw",
-        "type": "keyword",
-        "name": "Firefox",
-        "default_value": "ff"
-      }
-    ]
-  }
-  
+  "required_api_version": "^2.0.0",
+  "name": "open url on default browser",
+  "description": "Open directly default browser links",
+  "developer_name": "Bitter - Kleber Souza",
+  "icon": "images/firefox.svg",
+  "options": {
+    "query_debounce": 0.05
+  },
+  "preferences": [
+    {
+      "id": "ff_kw",
+      "type": "keyword",
+      "name": "Firefox",
+      "default_value": "ff"
+    }
+  ]
+}

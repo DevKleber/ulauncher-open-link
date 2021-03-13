@@ -6,7 +6,6 @@ from ulauncher.api.shared.action.RenderResultListAction import RenderResultListA
 from ulauncher.api.shared.action.HideWindowAction import HideWindowAction
 from ulauncher.api.shared.action.ExtensionCustomAction import ExtensionCustomAction
 import webbrowser
-import re
 
 class FfExtension(Extension): 
 
@@ -37,7 +36,8 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         query = event.get_data() or str()
-        if re.match('http://|https://', query):
+
+        if "http" in url: 
             webbrowser.open_new_tab(query)
         else:
             webbrowser.open_new_tab('https://' + query)

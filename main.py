@@ -37,7 +37,6 @@ class ItemEnterEventListener(EventListener):
 
     def on_event(self, event, extension):
         query = event.get_data() or str()
-        webbrowser.open_new_tab('https://' + query)
         if re.match('http://|https://', query):
             webbrowser.open_new_tab(query)
         else:

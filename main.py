@@ -37,10 +37,11 @@ class ItemEnterEventListener(EventListener):
     def on_event(self, event, extension):
         query = event.get_data() or str()
 
-        if "http" in query: 
-            webbrowser.open_new_tab(query)
-        else:
-            webbrowser.open_new_tab('https://' + query)
+        webbrowser.open_new_tab(query)
+        # if "http" in query: 
+        #     webbrowser.open_new_tab(query)
+        # else:
+        #     webbrowser.open_new_tab('https://' + query)
 
         return RenderResultListAction([])
 

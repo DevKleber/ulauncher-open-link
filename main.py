@@ -21,12 +21,13 @@ class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
         query = event.get_argument() or str()
 
+        keep_app_open = extension.preferences["stay_open"] == "yes"
         items = [
             ExtensionResultItem(
                 icon = 'images/browser.svg',
                 name = event.get_argument(),
                 description = 'Open %s in a new window of the default browser' % event.get_argument(),
-                on_enter=ExtensionCustomAction(query, keep_app_open=True)
+                on_enter=ExtensionCustomAction(query, keep_app_open=keep_app_open)
             )
         ]
 

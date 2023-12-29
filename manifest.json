@@ -13,6 +13,13 @@
       "type": "keyword",
       "name": "Default browser",
       "default_value": "l"
+    },
+    {
+      "id": "stay_open",
+      "type": "select",
+      "name": "Keep Ulauncher open after opening a url",
+      "default_value": "no",
+      "options": ["yes", "no"]
     }
   ]
 }
